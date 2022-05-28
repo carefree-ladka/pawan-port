@@ -1,0 +1,26 @@
+[
+    {
+      "imageAdress": "/PAWAN.jpg",
+      "type": "FullStack Developer"
+    },
+    {
+      "heading": "About",
+      "about": "My name is Pawan. And I am a full stack developer based out of Lucknow India. I am currently working at Publicis Sapient as Frontend developer. My favourite technologies right now are: React.js, Next.js, Node.js, Express.js and GraphQL."
+    },
+    [
+      {
+        "URL": "https://twitter.com/KPawanFD",
+        "name": "Twitter"
+      },
+      {
+        "URL": "https://www.linkedin.com/in/kumpawan/",
+        "name": "Linkedin"
+      },
+      {
+        "URL": "https://github.com/carefree-ladka",
+        "name": "Github"
+      }
+    ],
+    ["Music", "Traveling", "Books"]
+  ]
+  
