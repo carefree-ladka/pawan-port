@@ -69,6 +69,10 @@ aside,
   padding: 5px 15px;
 }
 
+footer{
+  text-align: center;
+}
+
 @media (min-width: 1921px) {
   body {
     font-size: 18px;

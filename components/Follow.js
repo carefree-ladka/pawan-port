@@ -5,7 +5,7 @@ export default function Follow({ data }) {
         <h2>Follow me here:</h2>
         <ul className="list">
           {data &&
-            data.map((link) => (
+            data?.social?.map((link) => (
               <li key={link.URL}>
                 <a href={link?.URL} target="_blank" rel="noopener noreferrer">
                   {link?.name}

@@ -1,18 +1,22 @@
 import Head from "next/head";
 import { useEffect, useState, lazy, Suspense } from "react";
 import Loader from "../components/Loader";
+import Footer from "../components/Footer";
 const About = lazy(() => import("../components/About"));
 const Follow = lazy(() => import("../components/Follow"));
 const Hobbies = lazy(() => import("../components/Hobbies"));
 const Profile = lazy(() => import("../components/Profile"));
+const Skills = lazy(() => import("../components/Skills"));
 
 export default function App() {
   const [data, setData] = useState([]);
   useEffect(() => {
     fetch("/portfolio.json")
-      .then((x) => x.json())
-      .then((data) => setData(data));
+      .then((res) => res.json())
+      .then((data) => setData(data[0]));
   }, []);
+
+  console.log(data);
   return (
     <div className="App">
       <Head>
@@ -24,11 +28,13 @@ export default function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Suspense fallback={<Loader />}>
-        <Profile data={data[0]} />
-        <About data={data[1]} />
-        <Hobbies data={data[3]} />
-        <Follow data={data[2]} />
+        <Profile data={data} />
+        <About data={data} />
+        <Skills data={data} />
+        <Hobbies data={data} />
+        <Follow data={data} />
       </Suspense>
+      <Footer />
     </div>
   );
 }

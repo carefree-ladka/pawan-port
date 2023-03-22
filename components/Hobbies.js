@@ -2,17 +2,17 @@ export default function Hobbies({ data }) {
   return (
     <div className="hobbies">
       <h2>Hobbies</h2>
-      <ul>{data && data.map((hobby) => <li key={hobby}>{hobby}</li>)}</ul>
+      <ul>{data && data?.hobbies?.map((hobby) => <li key={hobby}>{hobby}</li>)}</ul>
       <div className="resume">
         <div className="link">
           <a
-            href="/Pawan_FE.docx"
+            href={data?.resume}
             rel="noopener noreferrer"
             target="_blank"
             download
             title="Resume"
           >
-            <p>Resume</p>
+            Resume
           </a>
         </div>
       </div>

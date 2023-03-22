@@ -1,13 +1,18 @@
 [
-    {
-      "imageAdress": "/PAWAN.jpg",
+  {
+    "personalInfo": {
+      "imageAdress": "/PAWAN.png",
       "type": "FullStack Developer"
     },
-    {
+    "about": {
       "heading": "About",
       "about": "My name is Pawan. And I am a full stack developer based out of Lucknow India. I am currently working at Publicis Sapient as Frontend developer. My favourite technologies right now are: React.js, Next.js, Node.js, Express.js and GraphQL."
     },
-    [
+    "social": [
+      {
+        "URL": "https://instagram.com/carefree_ladka",
+        "name": "Instagram"
+      },
       {
         "URL": "https://twitter.com/KPawanFD",
         "name": "Twitter"
@@ -21,6 +26,38 @@
         "name": "Github"
       }
     ],
-    ["Music", "Traveling", "Books"]
-  ]
-  
+    "hobbies": ["Music", "Traveling", "Books"],
+    "resume": "/Pawan_FE.docx",
+    "skills": {
+      "frontend": [
+        "TypeScript",
+        "JavaScript",
+        "React.js",
+        "Next.js",
+        "HTML5",
+        "CSS3",
+        "Jest & RTL",
+        "Redux Toolkit",
+        "Figma",
+        "Tailwind CSS",
+        "Material UI",
+        "React-hook-form",
+        "TurboRepo",
+        "Git & Bitbucket",
+        "Accessibility",
+        "Responsive Design",
+        "Optimization"
+      ],
+      "backend": [
+        "Node.js",
+        "Express.js",
+        "Socket.io",
+        "JWT Tokens & Refresh Tokens",
+        "RESTful Services",
+        "GraphQL",
+        "MongoDB",
+        "MySQL"
+      ]
+    }
+  }
+]

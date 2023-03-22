@@ -48,10 +48,7 @@ h2::before {
   height: 300px;
   object-fit: contain;
 }
-.profile img:hover {
-  filter: invert(100%);
-  transition: 1s filter;
-}
+
 figcaption {
   text-align: center;
   padding-top: 1rem;
@@ -171,6 +168,38 @@ figcaption {
 .app-spinner div:nth-child(3) {
   left: 56px;
   animation-delay: 0;
+}
+
+.footer-name {
+  text-decoration: none;
+}
+.footer-name:hover {
+  text-decoration: underline;
+  transition: 0.5s all;
+}
+/* .skills {
+  display: flex;
+ 
+} */
+
+.skills h2 {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+.skill {
+  display: inline-block;
+  margin-right: 0.3rem;
+  border-radius: 4px;
+  padding: 0.4rem;
+  border: 1px solid #468df3;
+  margin-top: 0.4rem;
+  font-weight: 600;
+}
+.skills-frontend,
+.skills-backend {
+  margin-bottom: 0.4rem;
+  /* transform: skewX(-314deg);
+  transform: skewY(230deg); */
 }
 @keyframes anim {
   0% {
